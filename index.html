@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quantity.css">
 </head>
 <body>
     <div class="container">
@@ -25,24 +26,48 @@
             
             <div class="cards">
                 <div class="card">
-                    <img src="assets/bife.jpg" width="200px" height="300px" />
-                    Bife com batata
+                    <img src="assets/bife.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Bife com batata</b>
+                    </div>
                     <div class="card-price">
                         <b>R$ 30,00</b>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="assets/coxa.jpg" width="200px" height="300px" />
-                    Coxa de Frango Crocante
-                    <div class="card-price">
-                        <b>R$ 25,00</b>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/panela.jpg" width="200px" height="300px" />
-                    Carne de Panela
+                    <img src="assets/coxa.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Coxa de Frango Crocante</b>
+                    </div>
+                    <div class="card-price">
+                        <b>R$ 25,00</b>
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/panela.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Carne de Panela</b>
+                    </div>
                     <div class="card-price">
                         <b>R$ 22,00</b>
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
             </div>
@@ -58,24 +83,48 @@
             
             <div class="cards">
                 <div class="card">
-                    <img src="assets/farofa.jpg" width="200px" height="300px" />
-                    Bife com batata
+                    <img src="assets/farofa.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Farofa</b>
+                    </div>
                     <div class="card-price">
                         <b>R$ 10,00</b>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="assets/salad.jpg" width="200px" height="300px" />
-                    Coxa de Frango Crocante
-                    <div class="card-price">
-                        <b>R$ 8,00</b>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/torresmo.jpg" width="200px" height="300px" />
-                    Carne de Panela
+                    <img src="assets/salad.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Salada</b>
+                    </div>
+                    <div class="card-price">
+                        <b>R$ 8,00</b>
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/torresmo.jpg" width="150px" height="250px" />
+                    <div class="card-name">
+                        <b>Torresmo</b>
+                    </div>
                     <div class="card-price">
                         <b>R$ 12,00</b>
+                    </div>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
                     </div>
                 </div>
             </div>
@@ -85,11 +134,15 @@
             <input>
             <input>
             <input>
-            <button>Calcular</button>
+            <button onclick="calcular();">Calcular</button>
         </div>
         <div class="order">
 
         </div>
     </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
