@@ -1,0 +1,26 @@
+body{
+    background-color: #C5C1C0;
+}
+
+.container{
+    width: 900px;
+    background-color: #FFF;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title-home{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+}
