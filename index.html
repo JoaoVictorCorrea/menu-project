@@ -134,9 +134,9 @@
             <div class="data-title">
                 Dados Pessoais
             </div>
-            <input class="data-input" type="text">
-            <input class="data-input" type="text">
-            <input class="data-input" type="text">
+            <input id="name" class="data-input" type="text">
+            <input id="phone" class="data-input" type="text">
+            <input id="email" class="data-input" type="email">
         </div>
 
         <button onclick="calcular();">Calcular</button>
@@ -149,5 +149,10 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/quantity.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+    <script>
+        $("#phone").mask("(99) 9999-99999");
+    </script>
 </body>
 </html>
