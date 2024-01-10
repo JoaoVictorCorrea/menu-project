@@ -2,6 +2,24 @@ body{
     background-color: #C5C1C0;
 }
 
+button{
+    background-color: #007AFE;
+    color: #FFF;
+    padding: 10px 25px;   
+    font-size: 0.9rem;
+
+    border: none;
+    border-radius: 4px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0069D9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .container{
     width: 700px;
     background-color: #FFF;
@@ -12,7 +30,7 @@ body{
     justify-content: center;
 
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
 .title-home{
@@ -35,7 +53,7 @@ body{
     flex-direction: column;
 
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
 .card-title{
@@ -68,13 +86,14 @@ body{
 
 .card{
     padding: 10px;
+    margin-bottom: 10px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
 .card-name{
@@ -88,4 +107,40 @@ body{
     font-size: 15px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.personal-data{
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.data-title{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data-input{
+    width: 570px;
+    padding: 7px;
+    font-size: 0.9rem;
+
+    border-radius: 5px;
+    border: none;
+}
+
+.data-input:focus{
+    background-color: #E8F0FD;
+    outline: none;
 }
