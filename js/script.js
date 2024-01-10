@@ -19,7 +19,7 @@ function calcular() {
         currency: 'BRL',
     });
 
-    order.innerHTML = `Caro <b>${name.value}</b> <br><br>
+    order.innerHTML = `<br><br>Caro <b>${name.value}</b> <br><br>
                        <p>Seguem os dados do seu pedido.</p>
                        <p>O seu pedido é:</p>
                        <ul>`;
